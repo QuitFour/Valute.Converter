@@ -7,7 +7,7 @@ export const Convert = ({ onSubmit }) => {
     const pressHandler = () => {
        if (value.trim()){
             if(isNaN(value)) {
-                Alert.alert('Укажите сумму');
+                Alert.alert('Укажите числовое значение!');
             } else {
                 onSubmit(value);
                 setValue("");
